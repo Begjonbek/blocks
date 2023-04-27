@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+
+    <title>accordion</title>
+</head>
+
+<body class=" bg-[#1e1e1e] font-monst text-white">
+    <!-- header -->
+    <header class="py-6">
+        <!-- header container -->
+        <div class=" max-w-xll flex justify-between gap-8  px-5 mx-auto">
+            <div class="max-w-[930px] flex  justify-between xl:justify-start xl:gap-12 items-center w-full">
+                <div class="flex items-center gap-2 ">
+                    <img src="./image/header-titile.svg" alt="logo">
+                    <img src="./image/BLOCKS-222 1.svg" alt="logo">
+                </div>
+                <!-- nav -->
+                <nav class="max-w-3xl flex justify-end">
+                    <ul class="hidden xl:flex items-center gap-12">
+                        <li>
+                            <a href="#" class="font-medium text-base">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-base flex gap-2">About <img src=" ./image/shape.svg"
+                                    alt="logo"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-base flex gap-2">Token <img src="./image/shape.svg"
+                                    alt="logo"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-base flex gap-2">Building Blocks <img
+                                    src="./image/shape.svg" alt="logo"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-base">GitBook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-base">Metaverse</a>
+                        </li>
+                    </ul>
+
+                    <!-- Hamburger Button -->
+
+                    <div class=" xl:hidden ml-auto">
+                        <button id="menu-btn" type="button" class="z-40 block hamburger xl:hidden focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu -->
+                <div id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden  flex-col self-end w-full h-full py-1 pt-20 pl-12 space-y-3 text-lg text-white uppercase bg-black-400 z-30">
+                    <a href="#" class="hover:text-[#FF6464]">home</a>
+                    <a href="#" class="hover:text-[#FF6464] flex gap-2">About <img src=" ./image/shape.svg"
+                            alt="logo"></a>
+                    <a href="#" class="hover:text-[#FF6464] flex gap-2">Token <img src="./image/shape.svg"
+                            alt="logo"></a>
+                    <a href="#" class="hover:text-[#FF6464] flex gap-2">Building Blocks <img src="./image/shape.svg"
+                            alt="logo"></a>
+                    <a href="#" class="hover:text-[#FF6464]">GitBook</a>
+                    <a href="#" class="hover:text-[#FF6464]">Metaverse</a>
+
+                    <div class="flex items-center gap-10">
+                        <img src="./image/moon.svg" alt="logo">
+
+                        <button class="justify-center items-center py-3 px-6 border border-white  rounded-xl">
+                            Registry
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex hidden items-center gap-8">
+                <img src="./image/moon.svg" alt="logo">
+                <button
+                    class="justify-center items-center py-3 px-6 border border-white hover:bg-white hover:text-black rounded-xl">
+                    Registry
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pink Lady  -->
+    <section class="pt-12 pb-28">
+        <div class="max-w-xll px-5 mx-auto">
+
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-6">
+                <div class=" mb-28">
+                    <div class="rounded-2xl">
+                        <div class="swiper mySwiper w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="w-full object-cover rounded-2xl"src="./img/item.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="w-full object-cover rounded-2xl"src="./img/item.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="w-full object-cover rounded-2xl"src="./img/item.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- list -->
+                 <div class="flex flex-col gap-2 md:gap-y-6">
+                    <!-- cart-1 -->
+                    <div class="bg-[#1F2224] rounded-3xl py-8 px-6">
+                        <div class="flex flex-col gap-5 sm:flex-row justify-between mb-4">
+                            <h3 class="font-semibold text-2xl md:text-3xl ">Pink Lady #452</h3>
+                            <div
+                                class="max-w-[211px] rounded-full border border-[#F54562] flex gap-2 py-1.5 pl-2 pr-3">
+                                <div class="w-6 h-6 bg-[#F54562] flex justify-center items-center rounded-full">
+                                    <img src="./image/shape2.svg" alt="logo">
+                                </div>
+                                <p class="whitespace-nowrap">Verified by <b>BLOCKS</b></p>
+                            </div>
+                        </div>
+                        <p class="text-lg font-normal mb-8">Created by <a href="#"
+                                class="font-semibold underline">DeltaFlare</a></p>
+                        <p class="text-base break-normal tracking-tighter leading-7 mb-9">
+                            The Pink Ladies The Pink Ladies are an elite unit of the Deltanauts, dedicated to
+                            empowerment and equality all across the metaverse. Led by their fearless leaders,
+                            BossGirls. BossGirls and the Pink Ladies use their intelligence, tenacity, and teamwork
+                            <a href="#" class="underline">read more</a>
+                        </p>
+                        <div class="flex gap-8">
+                            <img src="./image/item/twiter-1.svg" alt="logo">
+                            <img src="./image/item/dicord.svg" alt="logo">
+                            <img src="./image/item/telegram.svg" alt="logo">
+                            <img src="./image/item/globle.svg" alt="logo">
+                        </div>
+                    </div>
+                    <!-- cart-2 -->
+                    <div class="bg-[#1F2224] rounded-3xl p-6">
+                        <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg leading-6">Chain Data</h3>
+                        <button class="btn-js-down   w-6 h-6 flex items-center justify-center">
+                            <svg  width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.957 8.24225C14.5586 8.24225 15.043 7.75006 15.043 7.1485C15.043 6.84381 14.9336 6.59381 14.7305 6.39069L8.87891 0.398499C8.62109 0.132874 8.33203 6.10352e-05 7.99609 6.10352e-05C7.66797 6.10352e-05 7.38672 0.125061 7.12109 0.390686L1.26953 6.39069C1.06641 6.59381 0.957031 6.85162 0.957031 7.1485C0.957031 7.75006 1.44141 8.24225 2.04297 8.24225C2.34766 8.24225 2.62109 8.11725 2.83984 7.8985L8.00391 2.586L13.1602 7.8985C13.3711 8.12506 13.6602 8.24225 13.957 8.24225Z"
+                                fill="white" />
+                            </svg>
+                        </button>
+                        </div>
+                        <ul class="main-js-down pt-4 flex flex-col gap-3">
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300"> Contract </span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    0x…efe3
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">UID</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    fa…3598
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Data Hash</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    4e…330e
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>  
+                    <!-- cart-3 -->
+                    <div class="bg-[#1F2224] rounded-3xl p-6">
+                        <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg leading-6">Check Data</h3>
+                        <button class="btn-js-down   w-6 h-6 flex items-center justify-center">
+                            <svg  width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.957 8.24225C14.5586 8.24225 15.043 7.75006 15.043 7.1485C15.043 6.84381 14.9336 6.59381 14.7305 6.39069L8.87891 0.398499C8.62109 0.132874 8.33203 6.10352e-05 7.99609 6.10352e-05C7.66797 6.10352e-05 7.38672 0.125061 7.12109 0.390686L1.26953 6.39069C1.06641 6.59381 0.957031 6.85162 0.957031 7.1485C0.957031 7.75006 1.44141 8.24225 2.04297 8.24225C2.34766 8.24225 2.62109 8.11725 2.83984 7.8985L8.00391 2.586L13.1602 7.8985C13.3711 8.12506 13.6602 8.24225 13.957 8.24225Z"
+                                fill="white" />
+                            </svg>
+                        </button>
+                        </div>
+                        <ul class="main-js-down pt-4 flex flex-col gap-3">
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300"> Contract </span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    0x…efe3
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">UID</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    fa…3598
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Data Hash</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    4e…330e
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </div> 
+                    <!-- cart-4 -->
+                    <div class="bg-[#1F2224] rounded-3xl p-6">
+                        <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg leading-6">BLOCKS Data</h3>
+                        <button class="btn-js-down   w-6 h-6 flex items-center justify-center">
+                            <svg  width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.957 8.24225C14.5586 8.24225 15.043 7.75006 15.043 7.1485C15.043 6.84381 14.9336 6.59381 14.7305 6.39069L8.87891 0.398499C8.62109 0.132874 8.33203 6.10352e-05 7.99609 6.10352e-05C7.66797 6.10352e-05 7.38672 0.125061 7.12109 0.390686L1.26953 6.39069C1.06641 6.59381 0.957031 6.85162 0.957031 7.1485C0.957031 7.75006 1.44141 8.24225 2.04297 8.24225C2.34766 8.24225 2.62109 8.11725 2.83984 7.8985L8.00391 2.586L13.1602 7.8985C13.3711 8.12506 13.6602 8.24225 13.957 8.24225Z"
+                                fill="white" />
+                            </svg>
+                        </button>
+                        </div>
+                        <ul class="main-js-down pt-4 flex flex-col gap-3">
+                            <li class="sm:flex justify-between items-center">
+                                The Pink Ladies are an elite unit of the Deltanauts, dedicated to empowerment and equality all across the metaverse
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                Delta Flare Pink Ladies
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300"> Valid Token ID Range</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    1-818
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300"> BLOCKS Transaction</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    0x…de6c
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Terms & Rights</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    deltaflare.gg/terms/
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">OpenSea</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    OpenSea
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Etherscan</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    etherscan.io/token/0x...eefe3
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Whitepaper</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    wiki.deltaflare.gg/
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="external">
+                                        <path id="shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.9775 5.64948C14.3428 5.02081 13.4761 4.88043 12.3164 4.88043H7.67163C6.52417 4.88043 5.65137 5.02081 5.02271 5.64948C4.39404 6.28424 4.25977 7.13873 4.25977 8.28619V12.9005C4.25977 14.0662 4.39404 14.9268 5.02271 15.5555C5.65747 16.1841 6.51807 16.3245 7.68384 16.3245H12.3164C13.4761 16.3245 14.3428 16.1841 14.9775 15.5555C15.6062 14.9207 15.7405 14.0662 15.7405 12.9005V8.2984C15.7405 7.13263 15.6062 6.27814 14.9775 5.64948ZM14.3793 8.13361V13.0714C14.3793 13.7122 14.2938 14.2371 13.9825 14.5606C13.6652 14.878 13.1219 14.9634 12.4872 14.9634H7.51282C6.87805 14.9634 6.33484 14.8719 6.01746 14.5606C5.70007 14.2371 5.62073 13.7122 5.62073 13.0714V8.14581C5.62073 7.49274 5.70007 6.96173 6.01746 6.64435C6.33484 6.32697 6.87805 6.24152 7.52502 6.24152H12.4872C13.1219 6.24152 13.6652 6.32697 13.9825 6.64435C14.2999 6.96173 14.3793 7.49274 14.3793 8.13361ZM12.4384 11.6431C12.4384 11.9971 12.2308 12.2413 11.9012 12.2413C11.5656 12.2413 11.358 12.0093 11.358 11.6431V10.7337L11.4435 9.90973L10.6622 10.7703L8.61755 12.815C8.48328 12.9432 8.33679 13.0042 8.15979 13.0042C7.81799 13.0042 7.56165 12.7723 7.56165 12.4122C7.56165 12.2535 7.63489 12.0948 7.75085 11.9788L9.80774 9.91583L10.6805 9.13458L9.89319 9.22614H8.92273C8.56262 9.22614 8.32458 9.01862 8.32458 8.68903C8.32458 8.35333 8.56262 8.14581 8.92273 8.14581H11.7487C12.1759 8.14581 12.4384 8.37164 12.4384 8.82941V11.6431Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>  
+                     <!-- cart-5 -->
+                     <div class="bg-[#1F2224] rounded-3xl p-6">
+                        <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg leading-6">Properties</h3>
+                        <button class="btn-js-down   w-6 h-6 flex items-center justify-center">
+                            <svg  width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.957 8.24225C14.5586 8.24225 15.043 7.75006 15.043 7.1485C15.043 6.84381 14.9336 6.59381 14.7305 6.39069L8.87891 0.398499C8.62109 0.132874 8.33203 6.10352e-05 7.99609 6.10352e-05C7.66797 6.10352e-05 7.38672 0.125061 7.12109 0.390686L1.26953 6.39069C1.06641 6.59381 0.957031 6.85162 0.957031 7.1485C0.957031 7.75006 1.44141 8.24225 2.04297 8.24225C2.34766 8.24225 2.62109 8.11725 2.83984 7.8985L8.00391 2.586L13.1602 7.8985C13.3711 8.12506 13.6602 8.24225 13.957 8.24225Z"
+                                fill="white" />
+                            </svg>
+                        </button>
+                        </div>
+                        <ul class="main-js-down pt-4 flex flex-col gap-3">
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Background</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    White
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Clothes</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    Astronaut costume
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Accessories</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    Jetpack
+                                </span>
+                            </li>
+                            <li class="sm:flex justify-between items-center">
+                                <span class="font-medium text-sm text-white-300">Hat</span>
+                                <span class="flex items-center gap-1 font-medium text-sm">
+                                    Pink helmet
+                                </span>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mb-10">Other NFTs</h2>
+                <div class=" grid gap-2 sm:gap-6  sm:grid-cols-2 xl:grid-cols-4">
+                    <div class="bg-[#1F2224] rounded-3xl py-2 px-2">
+                        <img class="rounded-3xl w-full" src="./image/item/item-1.png" alt="logo">
+                        <div class="py-6 px-6">
+                            <p class="font-semibold text-base mb-4">Blocks #001</p>
+                            <div class="max-w-[211px] rounded-full border border-[#F54562] flex gap-2 py-1.5 pl-2 pr-3">
+                                <div class="w-6 h-6 bg-[#F54562] flex justify-center items-center rounded-full">
+                                    <img src="./image/shape2.svg" alt="logo">
+                                </div>
+                                <p class="whitespace-nowrap">Verified by <b>BLOCKS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#1F2224] rounded-3xl py-2 px-2">
+                        <img class="rounded-3xl w-full" src="./image/item/item-2.png" alt="logo">
+                        <div class="py-6 px-6">
+                            <p class="font-semibold text-base mb-4">Blocks #063</p>
+                            <div class="max-w-[211px] rounded-full border border-[#F54562] flex gap-2 py-1.5 pl-2 pr-3">
+                                <div class="w-6 h-6 bg-[#F54562] flex justify-center items-center rounded-full">
+                                    <img src="./image/shape2.svg" alt="logo">
+                                </div>
+                                <p class="whitespace-nowrap">Verified by <b>BLOCKS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#1F2224] rounded-3xl py-2 px-2">
+                        <img class="rounded-3xl w-full" src="./image/item/item-3.png" alt="logo">
+                        <div class="py-6 px-6">
+                            <p class="font-semibold text-base mb-4">Blocks #035</p>
+                            <div class="max-w-[211px] rounded-full border border-[#F54562] flex gap-2 py-1.5 pl-2 pr-3">
+                                <div class="w-6 h-6 bg-[#F54562] flex justify-center items-center rounded-full">
+                                    <img src="./image/shape2.svg" alt="logo">
+                                </div>
+                                <p class="whitespace-nowrap">Verified by <b>BLOCKS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#1F2224] rounded-3xl py-2 px-2">
+                        <img class="rounded-3xl w-full" src="./image/item/item-4.png" alt="logo">
+                        <div class="py-6 px-6">
+                            <p class="font-semibold text-base mb-4">Blocks #005</p>
+                            <div class="max-w-[211px] rounded-full border border-[#F54562] flex gap-2 py-1.5 pl-2 pr-3">
+                                <div class="w-6 h-6 bg-[#F54562] flex justify-center items-center rounded-full">
+                                    <img src="./image/shape2.svg" alt="logo">
+                                </div>
+                                <p class="whitespace-nowrap">Verified by <b>BLOCKS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-16">
+        <div class="max-w-xll flex flex-col  xl:flex-row items-center xl:justify-between gap-y-6 px-5 mx-auto">
+            <div class="flex flex-col lg:flex lg:flex-row gap-10">
+                <div class=" flex items-center gap-2 mx-auto">
+                    <img src="./image/header-titile.svg" alt="logo">
+                    <img src="./image/BLOCKS-222 1.svg" alt="logo">
+                </div>
+                <div class="flex flex-col  md:flex-row items-center gap-5 lg:gap-11 max-w-[428px]">
+                    <a href="#" class="font-medium text-sm">Terms and Conditions</a>
+                    <a href="#" class="font-medium text-sm">Privacy Policy</a>
+                    <a href="#" class="font-medium text-sm">Disclaimer</a>
+                </div>
+            </div>
+            <div class="flex gap-x-16 xl:gap-x-6 ">
+                <img src="./image/twiter.svg" alt="logo">
+                <img src="image/instagram.svg" alt="logo">
+                <img src="./image/apps.svg" alt="logo">
+            </div>
+            <div class="w-[268px] space-y-2">
+                <p class="text-sm font-medium text-center xl:text-right">made by <span>roobinium.io</span></p>
+                <p class="text-sm font-medium">© 2023 BLOCKS, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
