@@ -13,10 +13,12 @@ module.exports = {
       backgroundImage: {
         'hero-back':"url('../image/wrapper.png')",
         'back-mobile':"url('../image/wrapper-mobil.png')",
-          'update':"url('../image/update.png')",
-          'update-mobil':"url('../image/update-mobil.png')",
+        'update':"url('../image/update.png')",
+        'update-mobil':"url('../image/update-mobil.png')",
         'connec':"url('../image/connectivity.png')",
         'about':"url('../image/about.png')",
+        'bg-gradient':"url('linear-gradient(180deg, rgba(36, 0, 255, 0) 0%, #FF00AA 100%)')",
+        
       },
       colors:{
         black:{

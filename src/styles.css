@@ -15,12 +15,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* #wrapper {
-  background-image: url(../public/image/wrapper.svg);
-  background-size: cover;
-  mix-blend-mode: lighten;
- 
-} */
+
 #migration {
   background-image: url(../public/image/background.svg);
   background-size: cover;
@@ -33,6 +28,9 @@
   width: 100%;
   background-size: cover;
   background-position-y: bottom;
+}
+.bg-about{
+  background-position:calc(ceter -50%);
 }
 @layer base {
   .btn {
@@ -49,7 +47,12 @@
     border: none;
   }
 }
-
+.hr-1{
+  display: block;
+  width: 4px;
+  border-bottom: 3px solid rgba(213, 213, 222, 0.24);
+  transform: rotate(180deg);
+}
 
 /* Hamburger Menu */
 .hamburger {
