@@ -28,6 +28,15 @@ module.exports = {
           '700':'#000000'
         },
         'white-300':'#E0E0FF99',
+        'air':'#00BBFF',
+        'pink':'#FF00AA',
+        'apelsin':'#FF5E00',
+        'violet':'#C32DE1',
+        'gren':'#16B862',
+        'air-100':'#00B8B9',
+        'yellow':'#FFAB00',
+        'blue':'#5D2DE1',
+        'green-00':'#00FFAA'
       },
     },
   },
