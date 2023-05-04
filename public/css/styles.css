@@ -763,6 +763,12 @@ body{
 .max-w-\[240px\]{
   max-width: 240px;
 }
+.max-w-sm{
+  max-width: 24rem;
+}
+.max-w-md{
+  max-width: 28rem;
+}
 .rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1181,6 +1187,9 @@ body{
 .tracking-tighter{
   letter-spacing: -0.05em;
 }
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1234,6 +1243,9 @@ body{
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .txts {
@@ -1319,6 +1331,11 @@ body{
 .hover\:text-\[\#FF6464\]:hover{
   --tw-text-opacity: 1;
   color: rgb(255 100 100 / var(--tw-text-opacity));
+}
+
+.hover\:text-black-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{
